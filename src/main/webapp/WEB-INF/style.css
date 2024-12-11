@@ -1,0 +1,176 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/ERIMAGE.jpg'); /* Path to the background image */
+    background-size: cover; /* Make the image cover the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background fixed during scroll */
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Page Header Styling */
+h1, h2 {
+    text-align: center;
+    color: #4CAF50; /* Green color */
+    font-size: 36px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect for text */
+}
+
+h2 {
+    font-size: 28px;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+    border-radius: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for navbar */
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #4CAF50; /* Green on hover */
+    color: white;
+}
+
+/* List and List Item Styling */
+ol {
+    list-style-type: decimal;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol li {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+}
+
+li::marker {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 28px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    ol {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+}
